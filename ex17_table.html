@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+
+        테이블 셀 병합
+        1. 가로 병합
+        2. 세로 병합 
+
+    -->
+    <h1>원본 테이블</h1>
+    <table border="1" width="200" height="200">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <!-- 각각의 <tr>내의 <td> 개수는 동일해야 한다! > 테이블 깨짐 -->
+    <h1>가로 셀병합</h1>
+    <table border="1" width="200" height="200">
+        <tr>
+            <td colspan="2">1</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <h1>세로 셀병합</h1>
+    <table border="1" width="200" height="200">
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1" width="300" height="300">
+        <tr>
+            <td colspan="3">1</td>
+        </tr>
+        <tr>
+            <td rowspan="2">4</td>
+            <td colspan="2">5</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
